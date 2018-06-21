@@ -332,7 +332,7 @@ li {
     position: fixed;
     height: 100%;
     width: 260px;
-    z-index: 99;
+    z-index: 1;
 }
 
 .header .avatar {
