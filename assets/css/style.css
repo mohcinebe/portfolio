@@ -326,7 +326,8 @@ li {
 /*                      HEADER                                     */
 /*-----------------------------------------------------------------*/
 .header {
-    background: #efefef;
+    /*background: #efefef;*/
+	background: linear-gradient(#f8f8f8, #fff);
     padding: 46px;
     position: fixed;
     height: 100%;
