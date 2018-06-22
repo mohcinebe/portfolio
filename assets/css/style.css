@@ -376,6 +376,11 @@ a {
   padding: 0 20px;
 }
 
+#body {
+  height: 1200px;
+  background: #eee;
+}
+
 a.button {
   margin: 0 auto;
   text-align: center;
