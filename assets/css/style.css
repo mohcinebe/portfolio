@@ -338,7 +338,7 @@ a {
   height: 225px;
   border: 7px solid transparent;
   bottom: 0;
-  margin-left: 0px;
+  margin-left: 80px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
@@ -416,6 +416,8 @@ a {
   #popUp {
     margin-left: -45px;
   }
+  
+  
   #plus {
     margin-left: -45px;
   }
@@ -429,7 +431,7 @@ a {
   text-align:center;
   border-radius: 10px;
   /*background-color:#1f2f77;*/
-  background: linear-gradient(to top left, #00ffff 0%, #6600ff 82%);
+  background: linear-gradient(to top left, #707070 0%, #282828 100%);
   color:white;
   font-family: courier, "courier new", monospace;
   font: bold; 
@@ -438,11 +440,14 @@ a {
 
 #location h4 {
 	color: white !important;
+	font-size: 12px;
 }
 
 #spec h4{
 	color: white !important;
+	font-size: 12px;
 }
+
 
 
 #xyz{
@@ -457,7 +462,8 @@ a {
 }
 
 #logo{
-  padding-top: 20px;
+  padding-top: 40px;
+  padding-left: 20px;
 }
 .bleft{
   border-left : 2px solid white;
@@ -476,17 +482,24 @@ a {
   font-weight: bold;
   border:none;
   border-radius:35px;
-  background-color : #47b2ff;
+  background-color : #333333;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
+
 .degree:hover{
-  background-color: #00ff71;
+  background-color: #00ffff;
+  color: black;
 }
 
 .box{
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
+
+@media all and (max-width: 900px) {
+  #logo {
+	  
+  }
 
 /* ------------------*/
 /*  WEATHER APP END  */
