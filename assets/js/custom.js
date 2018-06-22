@@ -119,7 +119,7 @@ $(function(){
 /*
 Background Gradients From -- 
 https://uigradients.com
-*/
+
 
 
 var colors = new Array(
@@ -178,7 +178,104 @@ var color2 = "#"+((r2 << 16) | (g2 << 8) | b2).toString(16);
   }
 }
 
-setInterval(updateGradient,10);
+setInterval(updateGradient,10); */
+
+
+/* ------------------*/
+/*     WEATHER APP   */
+/* ------------------*/
+
+
+$(document).scroll(function() {
+  var scroll = $(this).scrollTop();
+  if (scroll >= 150) {
+    $("#popUp").css("margin-left", "-425px");
+    $("#plus").css("margin-left", "0px");
+  }
+});
+
+$("#plus").click(function() {
+  $("#popUp").css("margin-left", "0px");
+  $("#plus").css("margin-left", "-425px");
+});
+
+$("#close").click(function() {
+  $("#popUp").css("margin-left", "-425px");
+  $("#plus").css("margin-left", "0px");
+});
+
+
+/* app */
+
+var g;
+$.ajax({
+    type: 'GET',
+    url: 'https://ipinfo.io/json/',
+    success: Mohc
+  });
+
+
+function Mohc(data) {
+           $("#city").text(data.city);
+           $("#country").text(data.country); 
+           
+          $.ajax({
+    type: 'GET',
+    url: 'https://api.darksky.net/forecast/fa929ec72287732ea0a342cbea4610ef/'+data.loc+'',dataType:'jsonp',
+    success: weather
+  });
+  
+  function weather(v){
+              $("#description").text(v.currently.summary);
+ $("#temp").text(v.currently.temperature);
+       
+             
+// Handle Button Click
+        
+             $("#degree").click(function(){
+          if($("#degree").text()=="F")
+             {
+               $("#degree").text("C");
+                                    $("#temp").text(((($("#temp").text()*1)-32)/1.8).toFixed(2)*1);
+             }
+            else if($("#degree").text()=="C"){
+              $("#degree").text("F");
+              $("#temp").text(((($("#temp").text()*1)*1.8)+32).toFixed(2)*1);
+            }   
+            })
+        
+// Handle Button Click     
+             
+// Skycons 
+       $("canvas").attr("id",v.currently.icon);      
+               
+             var icons = new Skycons({"color": "white"});
+
+icons.set("clear-day", Skycons.CLEAR_DAY);
+icons.set("clear-night", Skycons.CLEAR_NIGHT);
+icons.set("partly-cloudy-day", Skycons.PARTLY_CLOUDY_DAY);
+icons.set("partly-cloudy-night", Skycons.PARTLY_CLOUDY_NIGHT);
+icons.set("cloudy", Skycons.CLOUDY);
+icons.set("rain", Skycons.RAIN);
+icons.set("sleet", Skycons.SLEET);
+icons.set("snow", Skycons.SNOW);
+icons.set("wind", Skycons.WIND);
+icons.set("fog", Skycons.FOG);
+
+icons.play();
+             
+// Skycons
+             
+           }
+}
+
+
+/* ------------------*/
+/*     WEATHER APP   */
+/* ------------------*/
+
+
+
 
 
 /* Go back button */
