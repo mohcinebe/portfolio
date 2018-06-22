@@ -338,7 +338,7 @@ a {
   height: 225px;
   border: 7px solid transparent;
   bottom: 0;
-  margin-left: 0;
+  margin-left: 0px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
@@ -347,7 +347,7 @@ a {
 }
 
 #new span {
-  background: #fff;
+  background: transparent;
   position: absolute;
   color: white;
   padding: 4px 10px;
@@ -409,15 +409,15 @@ a {
   display: relative;
   border-top: 55px solid transparent;
   border-bottom: 55px solid transparent;
-  border-left: 55px solid #6600ff;
+  border-left: 55px solid transparent;
 }
 
 @media all and (max-width: 900px) {
   #popUp {
-    margin-left: -425px;
+    margin-left: -45px;
   }
   #plus {
-    margin-left: 0px;
+    margin-left: -45px;
   }
 }
 
@@ -436,6 +436,13 @@ a {
   margin-top: 30px;
 }
 
+#location h4 {
+	color: white !important;
+}
+
+#spec h4{
+	color: white !important;
+}
 
 
 #xyz{
