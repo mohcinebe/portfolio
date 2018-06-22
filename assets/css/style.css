@@ -6,6 +6,7 @@
 03. Layout
 04. Header
 05. Main Content
+05.1. Instagram feed
 06. Section Welcome
 07. Section Fun Facts
 08. Section Resume
@@ -16,6 +17,7 @@
 13. Section Contact
 14. Other Elements
 15. Responsive
+
 */
 /*-----------------------------------------------------------------*/
 /*                      GLOBAL STYLES                              */
@@ -784,6 +786,24 @@ li {
     border-bottom: solid 3px #000  !important;
 	border-radius: 3px;
 }
+
+/*-----------------------------------------------------------------*/
+/*                      INSTAGRAM FEED                             */
+/*-----------------------------------------------------------------*/
+
+/* Instagram feed */
+
+#squares div {
+    display: block;
+    float: left;
+    width: 300px;
+    height: 200px;
+    background: white;
+    margin-right: 5px;
+}
+
+
+
 
 /*-----------------------------------------------------------------*/
 /*                      SECTION WELCOME                            */
@@ -1792,3 +1812,4 @@ font-weight: 300;
         width: 100%;
     }
 }
+
