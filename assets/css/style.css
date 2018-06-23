@@ -339,6 +339,7 @@ a {
   border: 7px solid transparent;
   bottom: 0;
  /* margin-left: 0px;*/
+  margin-left: 380px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
@@ -461,7 +462,7 @@ a {
 }
 
 #logo{
-  padding-top: 20px;
+  padding-top: 40px;
 }
 .bleft{
   border-left : 2px solid white;
