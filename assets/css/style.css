@@ -403,6 +403,7 @@ a {
   position: fixed;
   /*margin-top: -850px;*/
   left: 10px;
+  top: 0;
 }
 
 #plus::after  {
