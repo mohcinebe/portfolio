@@ -401,7 +401,7 @@ a {
 
 #plus span {
   position: fixed;
-  margin-top: 50px;
+  margin-top: -850px;
   left: 10px;
 }
 
@@ -417,11 +417,15 @@ a {
 @media all and (max-width: 900px) {
   #popUp {
     margin-left: -45px;
+	
   }
   #plus {
     margin-left: -45px;
   }
   
+  #plus span {
+	margin-top: -620px;
+  }
 
   
 }
