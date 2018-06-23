@@ -334,16 +334,17 @@ a {
 
 #popUp {
   position: fixed;
-  max-width: 350px;
+  /*max-width: 350px;*/
   height: 225px;
   border: 7px solid transparent;
   bottom: 0;
-  margin-left: 0px;
+ /* margin-left: 0px;*/
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
   border-radius: 10px;
+  /*padding-left: 380px;*/
 }
 
 #new span {
@@ -385,7 +386,7 @@ a {
 #plus {
   position: fixed;
   color: #6600ff;
-  bottom: 15%;
+  bottom: 0;
   font-size: 15px;
   margin-left: -425px;
   -webkit-transition: all 1.25s ease;
@@ -419,6 +420,9 @@ a {
   #plus {
     margin-left: -45px;
   }
+  
+
+  
 }
 
 
@@ -487,6 +491,22 @@ a {
 .box{
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
+
+@media all and (max-width: 900px) {
+
+#location h4 {
+	font-size: 14px;
+}
+
+#spec h4 {
+	font-size: 14px;
+}
+
+#logo{
+  padding-top: 50px;
+}
+}
+
 
 /* ------------------*/
 /*  WEATHER APP END  */

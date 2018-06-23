@@ -189,18 +189,18 @@ setInterval(updateGradient,10); */
 $(document).scroll(function() {
   var scroll = $(this).scrollTop();
   if (scroll >= 200) {
-    $("#popUp").css("margin-left", "-1500px");
+    $("#popUp").css("margin-left", "-1600px");
     $("#plus").css("margin-left", "0px");
   }
 });
 
 $("#plus").click(function() {
   $("#popUp").css("margin-left", "0px");
-  $("#plus").css("margin-left", "-1500px");
+  $("#plus").css("margin-left", "-1600px");
 });
 
 $("#close").click(function() {
-  $("#popUp").css("margin-left", "-1500px");
+  $("#popUp").css("margin-left", "-1600px");
   $("#plus").css("margin-left", "0px");
 });
 
