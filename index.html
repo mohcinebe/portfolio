@@ -172,16 +172,34 @@
 
 		<!-- Section Welcome end -->
 		
+				<div class="container2">
+   <h3>Enjoy some music while visiting</h3>
 
+ <div class="coverflow">
+<div class="flowItem"><img class="itemImage" src="https://2.bp.blogspot.com/-8lGJmcCiv0M/WzjTMBNvHqI/AAAAAAAAAuU/gq1kOoC-jbg7S_gSd0OKgyeb2ufEegHyQCLcBGAs/s1600/if-the-world-were-mine.jpg" id="marvin"></div>
+   
+<div class="flowItem"><img class="itemImage" src="https://3.bp.blogspot.com/-Sga9rmoq2qc/WzjTM__JsEI/AAAAAAAAAuY/pXttlFZnF-E0YmH7MdMGWJ8Cnb5Cxx07gCLcBGAs/s1600/simply-red.jpg" id="sunrise"></div>
+   
+<div class="flowItem"><img class="itemImage" src="https://1.bp.blogspot.com/-141NC8fpX_E/WzjTMH6UwbI/AAAAAAAAAuM/yzdPvNOOcr88Cr6VewQdvegYM1HZIClCwCLcBGAs/s1600/Bill-evans.jpg" id="evans"></div>
+   
+<div class="flowItem"><img class="itemImage" src="https://2.bp.blogspot.com/-pWx9EmXTyoc/WzjTMGoYEnI/AAAAAAAAAuQ/sCZyTaJTwLEqP8sl7M-8PPjII4TFby8SACLcBGAs/s1600/game-is-on.jpg" id="4am"></div>
+   
+<div class="flowItem"><img class="itemImage" src="https://4.bp.blogspot.com/-uqQgpn0a5y8/WzjTNHDhdCI/AAAAAAAAAuc/cxlbBTO3iNAv_QyFI7uOQz5VXqy9NFFYQCLcBGAs/s1600/the-moth.jpg" id="moth"></div>
+   
+<div class="flowItem"><img class="itemImage" src="https://2.bp.blogspot.com/-pLZzPlR_3mY/WzjTNGMFyLI/AAAAAAAAAug/-L-YcwA5MWQuHFDghG_r24p7gc4iDOKMACLcBGAs/s1600/the-pianist.jpg" id="pianist"></div>
+ </div>
+ <div id="music-player"></div>
+        </div>
+		
+		<div class="scroll">
+		<img  src="assets\images\scroll.gif" alt="scroll" ></div>
+		
 		<!-- Section About -->
 		<section id="about" class="about">
 
 			<div class="section-header">
 				<h2>About me</h2>
 			</div>
-			
-				
-			<!-- Intro -->
 			
 		<div class="intro">
 
@@ -745,6 +763,72 @@
 <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="assets/js/custom.js"></script>
 <script type="text/javascript" src="assets/js/smoothscroll.min.js"></script>
+
+<script>
+$(document).ready(function(){  /* covers functions start */
+   
+    $('#marvin').click(function(){
+        $('#music-player').empty().append('<iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/269944040&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>');
+    });
+  
+   $('#sunrise').click(function(){
+        $('#music-player').empty().append('<iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/59828684&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>');
+    });
+  
+     $('#evans').click(function(){
+        $('#music-player').empty().append('<iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/152817071&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>');
+    });
+  
+       $('#4am').click(function(){
+        $('#music-player').empty().append('<iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/346444859&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>');
+    });
+  
+      $('#moth').click(function(){
+        $('#music-player').empty().append('<iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/284068914&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>');
+    });
+  
+     $('#pianist').click(function(){
+        $('#music-player').empty().append('<iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/99201085&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>');
+    });
+  /* covers functions ends */
+});
+
+$(function(){
+  transformCovers();
+  $('.coverflow').on('click','.flowItem:not(.selected)',function(){
+    transformCovers($(this));
+  });
+});
+
+function transformCovers(centerItem,callback) {
+  if(typeof(centerItem)=="undefined"){
+    var items = $('.coverflow .flowItem');
+    centerItem = items.eq(parseInt(items.length/2));
+  }
+
+  if(!centerItem.hasClass('selected')){
+    var leftItems = centerItem.prevAll('.flowItem');
+    var rightItems = centerItem.nextAll('.flowItem');
+
+    var transform_vals = "translateX(0px) rotateY(0deg) translateZ(0)";
+    centerItem.css({"transform": transform_vals});
+ 
+    leftItems.each(function(i){
+      var itemdelta = i+1;
+      var transform_vals = "translateX("+((itemdelta)*-30)+"px) rotateY(40deg) translateZ(-200px)";
+      $(this).css({"transform": transform_vals});
+    });
+ 
+    rightItems.each(function(i){
+      var itemdelta = i+1;
+      var transform_vals = "translateX("+((itemdelta)*30)+"px) rotateY(-40deg) translateZ(-200px)";
+      $(this).css({"transform": transform_vals});
+    });
+    
+ centerItem.addClass('selected').siblings('.selected').removeClass('selected');
+  }
+}
+</script>
        
 </body>
 <!--<div class="mygradient" id="gradient" >

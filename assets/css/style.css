@@ -209,6 +209,83 @@ li {
 }
 
 
+
+/* Music player */
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.container2 {
+    background-color:#fff;
+    width:100%;
+
+}
+
+.container2 h3 {
+	text-align: center;
+
+	}
+
+.container2 img {
+	max-width: 130%;
+    width:250px;
+    height:250px;
+    box-shadow:2px 2px 5px rgba(0,0,0,.5);
+}
+
+
+
+.scroll img { 
+
+	width: 40px;
+	height: 40px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.coverflow {
+    height: 200px;
+    perspective: 500px;
+    transform-style: preserve-3d;
+    margin:60px auto 0 -50px;
+}
+
+.coverflow .flowItem{
+     position:absolute;
+     height: 200px;
+     width: 200px;
+     left:50%;
+     top:50%;
+     margin-left:-100px;
+     margin-top: -75px;
+     cursor: pointer;
+     z-index: 10;
+     transition: all 1s;
+}
+
+#music-player {
+    clear:both;
+    width:250px;
+    margin:75px auto;
+	height: 90px;
+}
+
+#widget {
+    height: 5em;
+}
+
+
+/* Music player ends  */
+
 /*-----------------------------------------------------------------*/
 /*                      PRELOADER                                  */
 /*-----------------------------------------------------------------*/
