@@ -283,6 +283,10 @@ li {
     height: 5em;
 }
 
+.mobilePrestitial {
+	top: auto !important;
+}
+
 
 /* Music player ends  */
 
