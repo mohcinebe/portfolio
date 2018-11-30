@@ -30,6 +30,34 @@
 	<!-- GOOGLE FONTS -->
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
+	
+	
+		<!-- form Integration starts -->
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="formassets/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="formassets/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="formassets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="formassets/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="formassets/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="formassets/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="formassets/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="formassets/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="formassets/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="formassets/vendor/noui/nouislider.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="formassets/css/util.css">
+	<link rel="stylesheet" type="text/css" href="formassets/css/main.css">
+	
+	
 
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -829,46 +857,148 @@
 			</div>
 
 			<!-- Contact Form -->
-			<form method="post"  action="https://formsenderapi.000webhostapp.com/index.php/api/a4j61AJyl1SMrykS5pxk">
+		<!--	<form method="post"  action="https://formsenderapi.000webhostapp.com/index.php/api/a4j61AJyl1SMrykS5pxk">
 
 				<div class="row"><!-- Row -->
 
-					<div class="col-md-6 col-sm-6 col-xs-12"><!-- Name input -->
-						<div class="form-group">
+		<!--			<div class="col-md-6 col-sm-6 col-xs-12"><!-- Name input -->
+		<!--				<div class="form-group">
 							<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Your Name" required="">
 						</div>
 					</div>
 
 					<div class="col-md-6 col-sm-6 col-xs-12"><!-- Email input -->
-						<div class="form-group">
+		<!--				<div class="form-group">
 							<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Your Email" required="">
 						</div>
 					</div>
 
 					<div class="col-md-6 col-sm-6 col-xs-12"><!-- Phone input -->
-						<div class="form-group">
+		<!--				<div class="form-group">
 							<input type="text" class="form-control" name="InputPhone" id="InputPhone" placeholder="Phone (optional)">
 						</div>
 					</div>
 
 					<div class="col-md-6 col-sm-6 col-xs-12"><!-- Subject input -->
-						<div class="form-group">
+		<!--				<div class="form-group">
 							<input type="text" class="form-control" id="InputSubject" name="InputSubject" placeholder="Subject">
 						</div>
 					</div>
 
 					<div class="col-md-12 col-sm-12 col-xs-12"><!-- Message textarea -->
-						<div class="form-group">
+		<!--				<div class="form-group">
 							<textarea name="InputMessage" id="InputMessage" class="form-control" rows="6" placeholder="Message" required=""></textarea>
 						</div>
 					</div>
 
 				</div><!-- Row end -->
 
-				<input type="submit" name="submit" id="submit" value="Send Message" class="btn btn-default pull-left"><!-- Send Button -->
+		<!--		<input type="submit" name="submit" id="submit" value="Send Message" class="btn btn-default pull-left"><!-- Send Button -->
 
-			</form>
+		<!--	</form>  
 			<!-- Contact Form end -->
+			
+			
+			<!-- quote contact form -->
+				<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" action="https://formsenderapi.000webhostapp.com/index.php/api/a4j61AJyl1SMrykS5pxk" method="post">
+			<!--	<span class="contact100-form-title">
+					Contact Us
+				</span>   -->
+
+				<div class="wrap-input100 validate-input bg1" data-validate="Please Type Your Name">
+					<span class="label-input100">FULL NAME *</span>
+					<input class="input100" type="text" name="name" placeholder="Enter Your Name">
+				</div>
+
+				<div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate = "Enter Your Email (e@a.x)">
+					<span class="label-input100">Email *</span>
+					<input class="input100" type="text" name="email" placeholder="Enter Your Email ">
+				</div>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Phone</span>
+					<input class="input100" type="text" name="phone" placeholder="Enter Number Phone">
+				</div>
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">Needed Services *</span>
+					<div>
+						<select class="js-select2" name="service">
+							<option>Please chooses</option>
+							<option>Corporate website</option>
+							<option>eCommerce plateform</option>
+							<option>Magazine/News website</option>
+							<option>UI/UX Design</option>
+							<option>Online Services</option>
+							<option>Consulting</option>
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
+
+				<div class="w-full dis-none js-show-service">
+					<div class="wrap-contact100-form-radio">
+						<span class="label-input100">What type of products do you sell?</span>
+
+						<div class="contact100-form-radio m-t-15">
+							<input class="input-radio100" id="radio1" type="radio" name="type-product" value="physical" checked="checked">
+							<label class="label-radio100" for="radio1">
+								Phycical Products
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio2" type="radio" name="type-product" value="digital">
+							<label class="label-radio100" for="radio2">
+								Digital Products
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio3" type="radio" name="type-product" value="service">
+							<label class="label-radio100" for="radio3">
+								Consulting services
+							</label>
+						</div>
+						
+					</div>
+
+					<div class="wrap-contact100-form-range">
+						<span class="label-input100">Budget *</span>
+
+						<div class="contact100-form-range-value">
+							$<span id="value-lower">610</span> - $<span id="value-upper">980</span>
+							<input type="text" name="from-value">
+							<input type="text" name="to-value">
+						</div>
+
+						<div class="contact100-form-range-bar">
+							<div id="filter-bar"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "Please Type Your Message">
+					<span class="label-input100">Message</span>
+					<textarea class="input100" name="message" placeholder="Your message here..."></textarea>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+							Submit
+							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+			
+			<!-- quote contact form ends -->
+			
 
 		</section>
 		
@@ -900,9 +1030,11 @@
 						<p><i class="fa fa-info-circle" aria-hidden="true"></i>
 						<span id="info-show"> &nbsp; Printable format (A4)</span></p>
 					</div>
-				
 			</div>	
 					
+		
+
+		
 		
 		<!-- Section Resume end -->
 	</div>
@@ -927,6 +1059,76 @@
 <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="assets/js/custom.js"></script>
 <script type="text/javascript" src="assets/js/smoothscroll.min.js"></script>
+
+
+
+<!-- quote contact form scripts starts -->
+
+<!--===============================================================================================-->
+	<script src="formassets/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="formassets/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="formassets/vendor/bootstrap/js/popper.js"></script>
+	<script src="formassets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="formassets/vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function(){
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+
+
+			$(".js-select2").each(function(){
+				$(this).on('select2:close', function (e){
+					if($(this).val() == "Please chooses") {
+						$('.js-show-service').slideUp();
+					}
+					else {
+						$('.js-show-service').slideUp();
+						$('.js-show-service').slideDown();
+					}
+				});
+			});
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="formassets/vendor/daterangepicker/moment.min.js"></script>
+	<script src="formassets/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="formassets/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="formassets/vendor/noui/nouislider.min.js"></script>
+	<script>
+	    var filterBar = document.getElementById('filter-bar');
+
+	    noUiSlider.create(filterBar, {
+	        start: [ 1500, 3900 ],
+	        connect: true,
+	        range: {
+	            'min': 1500,
+	            'max': 7500
+	        }
+	    });
+
+	    var skipValues = [
+	    document.getElementById('value-lower'),
+	    document.getElementById('value-upper')
+	    ];
+
+	    filterBar.noUiSlider.on('update', function( values, handle ) {
+	        skipValues[handle].innerHTML = Math.round(values[handle]);
+	        $('.contact100-form-range-value input[name="from-value"]').val($('#value-lower').html());
+	        $('.contact100-form-range-value input[name="to-value"]').val($('#value-upper').html());
+	    });
+	</script>
+<!--===============================================================================================-->
+	<script src="formassets/js/main.js"></script>
+
+<!-- quote contact form scripts ends -->
+
        
 </body>
 
