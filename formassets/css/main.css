@@ -411,6 +411,7 @@ textarea.input100 {
 
 .true-validate::after {
   content: "\f26b";
+  color : white;
   font-family: Material-Design-Iconic-Font;
   font-size: 18px;
   /* color: #00ad5f; */
@@ -424,10 +425,11 @@ textarea.input100 {
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   top: 35px;
   right: 10px;
+  border-radius: 20px;
 }
 
 /*---------------------------------------------*/
