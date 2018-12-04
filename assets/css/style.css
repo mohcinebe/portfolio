@@ -689,7 +689,7 @@ a {
 }
 
 .header .social-icons ul li:last-child {
-    padding-right: 0;
+    /* padding-right: 0; */
 }
 /* === Navigation === */
 .header .main-nav ul {
