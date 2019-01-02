@@ -60,8 +60,8 @@ $(function(){
     =========================================================================*/
     $("#welcome").backstretch([
 		
-		"assets/images/iphone3.jpg",
-		"assets/images/macbook.jpg",
+		"assets/images/iphone3.gif",
+		"assets/images/macbook.gif",
         
     ], {duration: 4000, fade: 1000});
 
