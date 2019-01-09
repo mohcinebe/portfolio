@@ -2,6 +2,7 @@
 [TABLE OF CONTENTS]
 
 01. Global Styles
+01.1 Progress bar
 02. Preloader
 02.1 Weather app
 03. Layout
@@ -24,6 +25,32 @@
 /*-----------------------------------------------------------------*/
 /*                      GLOBAL STYLES                              */
 /*-----------------------------------------------------------------*/
+
+
+/* ------------------*/
+/*    Progress bar   */
+/* ------------------*/
+
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+  border-radius: 20px;
+}
+
+.progress-bar {
+  height: 8px;
+  background: linear-gradient(to top left, #cc01cf 0%, #5202f7 82%);
+  width: 0%;
+  border-radius: 20px;
+}
+
+
+/* ------------------*/
+/* Progress bar end  */
+/* ------------------*/
+
 body {
     color: #1a1a1a;
     background-color: #ffffff;

@@ -104,6 +104,7 @@
 <!-- Main Wrapper -->
 <main class="wrapper">
 
+
 	<!-- Header -->
 	<header class="header pull-left">
 
@@ -165,6 +166,13 @@
 		
 		<!-- Navigation bar end -->
 		
+			<!-- Progress bar scroll starts -->
+	<div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div> 
+  <!-- Progress bar scroll ends -->
+		
+		
 
 		<!-- Footer Copyright -->
 		<div class="copyright">
@@ -175,7 +183,6 @@
 		
 		<!-- WEATHER APP -->
         
-<!--
 		<div id="darkBack"></div>
 		<div id="popUp">
 			<div id="close" class="close"><span></span><i class="fa fa-times"></i></div>
@@ -206,26 +213,29 @@
 							</div>
 						</div>
 						<!--row-->
-		<!--			</div>
+					</div>
 					<!--container-->
-		<!--		</div>
+				</div>
                 
 				<div id="plus"><span><img src="assets\images\cloudy-day-1.svg" height="60" width="60"></img></span></div>
 				<script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>   
 				
-			   -->
+			   
 
 		<!-- WEATHER APP END -->
 
 	</header>
 	<!-- Header end -->
 
-
 	
 	
 	<!-- Main Content -->
 	<div class="main-content pull-right" id="body"> 
+	
+	
 
+  
+  
 		<!-- Section Welcome -->
 		<section id="welcome" class="welcome">
 			<!-- <div class="quote text-center">
@@ -1388,6 +1398,23 @@
 	<script src="formassets/js/main.js"></script>
 
 <!-- quote contact form scripts ends -->
+
+
+<!-- progress bar scroll starts -->
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+<!-- progress bar scroll ends -->
 
        
 </body>
