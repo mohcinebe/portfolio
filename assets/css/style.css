@@ -375,8 +375,8 @@ li {
 
 .preloader .lines .line {
     width: 80px;
-    height: 1px;
-    background-color: #969696;
+    height: 2px;
+    background-color: #4f03f9;
     position: absolute;
     clip: rect(0,0,20px,0);
 }
@@ -401,8 +401,9 @@ li {
     top: 50px;
     text-align: center;
     width: 100%;
-    color: #969696;
+    color: #4f03f9;
     font-size: 14px;
+	font-weight: 900;
     font-family: "Montserrat",sans-serif;
     letter-spacing: 1px;
     line-height: 10px;
@@ -769,7 +770,7 @@ a {
 }
 
 .header .main-nav ul li a:hover,.header .main-nav ul li a:focus {
-    color: #0041da;
+    color: #4c06fa;
     text-decoration: none;
 }
 
