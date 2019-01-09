@@ -27,9 +27,34 @@
 /*-----------------------------------------------------------------*/
 
 
-/* ------------------*/
-/*    Progress bar   */
-/* ------------------*/
+/* --------------------*/
+/* Progress mobile bar */
+/* --------------------*/
+
+
+.mprogress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+  border-radius: 20px;
+}
+
+.mprogress-bar {
+  height: 8px;
+  background: linear-gradient(to top left, #cc01cf 0%, #5202f7 82%);
+  width: 0%;
+  border-radius: 20px;
+}
+
+
+/* ------------------------*/
+/* Progress mobile bar end */
+/* ------------------------*/
+
+
+/* --------------------*/
+/*    Progress  bar    */
+/* --------------------*/
 
 
 .progress-container {
@@ -47,9 +72,9 @@
 }
 
 
-/* ------------------*/
-/* Progress bar end  */
-/* ------------------*/
+/* ------------------------*/
+/*    Progress bar end     */
+/* ------------------------*/
 
 body {
     color: #1a1a1a;
@@ -929,7 +954,7 @@ a {
 
 /* === Mobile Menu Bar === */
 .header .mobile-bar {
-    background: rgba(12,12,12,0.75);
+    background: linear-gradient(to top left, #cc01cf 0%, #5202f7 82%);;
     color: #FFF;
     height: 60px;
     right: -59px;
@@ -1825,6 +1850,10 @@ a {
 
 	margin-top: -55px;
 	}
+	
+	.mobilehidebar{
+		visibility:hidden;
+	}
 }
 
 @media only screen and (max-width: 991px) {
@@ -1879,6 +1908,10 @@ a {
 
 	margin-top: -55px;
 }
+
+	.mobilehidebar{
+		visibility:hidden;
+	}
 }
 
 @media only screen and (max-width: 767px) {
@@ -1908,6 +1941,9 @@ a {
     padding-left: 30px;
     margin-top: -10px;
 }
+	.mobilehidebar{
+		visibility:hidden;
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -1936,6 +1972,10 @@ font-weight: 300;
 	display: inline;
 }
 
+.mobilehidebar{
+		visibility:hidden;
+	}
+
 }
 
 @media only screen and (max-height: 600px) {
@@ -1955,7 +1995,9 @@ font-weight: 300;
         bottom: -18px;
         position: relative;
     }
-	
+	.mobilehidebar{
+		visibility:hidden;
+	}
 	
 }
 
